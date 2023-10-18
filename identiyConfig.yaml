@@ -1,0 +1,29 @@
+identityProviders:
+  - name: Google
+    clientID: 211268978572-gqfmbg3kngb4knmvfi94o8amtp8s09lq.apps.googleusercontent.com
+    clientSecret: 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
+    redirectURL: http://localhost:8080/callback
+    authURL: https://accounts.google.com/o/oauth2/auth
+    tokenURL: https://accounts.google.com/o/oauth2/token
+    scopes:
+      - openid
+      - profile
+      - email
+  - name: IDP1
+    clientID: your_idp1_client_id
+    clientSecret: your_idp1_client_secret
+    redirectURL: http://localhost:8080/idp1/callback
+    authURL: https://idp1.com/auth
+    tokenURL: https://idp1.com/token
+    scopes:
+      - openid
+      - profile
+  - name: IDP2
+    clientID: your_idp2_client_id
+    clientSecret: your_idp2_client_secret
+    redirectURL: http://localhost:8080/idp2/callback
+    authURL: https://idp2.com/auth
+    tokenURL: https://idp2.com/token
+    scopes:
+      - openid
+      - profile
